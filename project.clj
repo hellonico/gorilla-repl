@@ -2,10 +2,11 @@
 ;;;;
 ;;;; gorilla-repl is licenced to you under the MIT licence. See the file LICENCE.txt for full details.
 
-(defproject gorilla-repl "0.4.1-SNAPSHOT"
+(defproject hellonico/gorilla-repl "0.4.1-SNAPSHOT"
   :description "A rich REPL for Clojure in the notebook style."
   :url "https://github.com/JonyEpsilon/gorilla-repl"
   :license {:name "MIT"}
+  :repositories [["vendredi" "https://repository.hellonico.info/repository/hellonico/"]]
   :dependencies ^:replace [[org.clojure/clojure "1.9.0"]
                            [http-kit "2.3.0"]
                            [ring/ring-json "0.4.0"]
