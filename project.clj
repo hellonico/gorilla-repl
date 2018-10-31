@@ -6,6 +6,15 @@
   :description "A rich REPL for Clojure in the notebook style."
   :url "https://github.com/JonyEpsilon/gorilla-repl"
   :license {:name "MIT"}
+  :release-tasks [["vcs" "assert-committed"]
+                ["change" "version" "leiningen.release/bump-version" "release"]
+                ["vcs" "commit"]
+                ["vcs" "tag" "--no-sign"]
+                ["deploy" "vendredi"]
+                ["change" "version" "leiningen.release/bump-version"]
+                ["vcs" "commit"]
+                ["vcs" "push"]
+                ]
   :dependencies ^:replace [[org.clojure/clojure "1.9.0"]
                            [http-kit "2.3.0"]
                            [ring/ring-json "0.4.0"]
