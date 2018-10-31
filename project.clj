@@ -6,6 +6,9 @@
   :description "A rich REPL for Clojure in the notebook style."
   :url "https://github.com/JonyEpsilon/gorilla-repl"
   :license {:name "MIT"}
+  :repositories [
+    ["vendredi" {:url "https://repository.hellonico.info/repository/hellonico/" :creds :gpg}]
+  ]
   :release-tasks [["vcs" "assert-committed"]
                 ["change" "version" "leiningen.release/bump-version" "release"]
                 ["vcs" "commit"]
